@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { getMovieCredits } from './../../servers/api';
 import { CastItem, CastList, Character, Name } from './Cast.styled';
 
-
 const Cast = () => {
   const [castList, setCastList] = useState([]);
   const { movieId } = useParams();
