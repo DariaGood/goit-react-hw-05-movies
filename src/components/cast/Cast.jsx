@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getMovieCredits } from './../../servers/api';
 import { CastItem, CastList, Character, Name } from './Cast.styled';
 
+
 const Cast = () => {
   const [castList, setCastList] = useState([]);
   const { movieId } = useParams();
@@ -18,7 +19,7 @@ const Cast = () => {
                 src={
                   profile_path
                     ? `https://image.tmdb.org/t/p/w200${profile_path}`
-                    : `http://www.suryalaya.org/images/no_image.jpg`
+                    : `https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930`
                 }
                 alt="actor"
                 loading="lazy"
