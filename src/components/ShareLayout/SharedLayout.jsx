@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Loader } from '../Loader/Loader';
 import { Header, Link, NavList } from './SharedLayout.styled';
 
-export const SharedLayout = () => {
+const SharedLayout = () => {
   return (
     <Container>
       <Header>
@@ -26,3 +26,5 @@ export const SharedLayout = () => {
     </Container>
   );
 };
+
+export default SharedLayout;
